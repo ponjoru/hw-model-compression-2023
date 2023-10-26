@@ -11,7 +11,7 @@ PC: MacBookPro16 2019, 2,3 GHz 8-Core Intel Core i9, 16Gb DDR4, MacOS 14.0
 NOTE: есть небольшая разница в метриках, так как используется немного другой препроцессинг и evaluator
 
 ## HW1: Evaluation
-Скрипт: `homeworks/hw1_validation.py`
+Скрипт: `homeworks/hw1_validation.py` \
 Задача: подсчет метрик для выбранной модели, оценить скорость работы на своем железе \
 Модель детекции лиц с ключевыми точками: SCRFD_500M (pytorch reimplementation), ([оригинал](https://github.com/deepinsight/insightface/tree/master/detection/scrfd))
 
@@ -21,7 +21,7 @@ NOTE: есть небольшая разница в метриках, так к�
 
 
 ## HW2: Quantization and Pruning
-Скрипт: `homeworks/hw2_quantization_and_pruning.py`
+Скрипт: `homeworks/hw2_quantization_and_pruning.py` \
 Задача: применить методы оптимизации квантизации и прунинга к выбранной модели. Оценить скорость и метрики оптимизированных моделей \
 Модель детекции лиц с ключевыми точками: SCRFD_500M_KPS (pytorch reimplementation), ([оригинал](https://github.com/deepinsight/insightface/tree/master/detection/scrfd))
 
@@ -44,7 +44,7 @@ TODO:
 реализовывать самому, либо переводить веса в Pytorch -> ONNX -> Keras
 
 ## HW4: Knowledge distillation
-*To be added soon*
+Скрипт: `homeworks/hw4_knowledge_distillation.ipynb`  
 
 Реализован скрипт обучения с дистиляцией: \
 Teacher: SCRFD_10G_KPS \
@@ -54,8 +54,10 @@ Student: SCRFD_500M_KPS
 
 Своего железа (MacBookPro2019) не хватает для обучения, обучение в GoogleColab.
 
+Обучено только 4 эпохи, в статье авторы рекомендуют обучать 100+ эпох
+
 ## HW5: Auto-compression (huggingface-optimum)
-Скрипт: `homeworks/hw5_autocompression.py` \
+Скрипт: `homeworks/hw6_export_engines.py` \
 Задача: применить метод автоматической оптимизации моделей из пакета [huggingface-optimum](https://huggingface.co/docs/optimum/index)
 
 Для дз выбрана модель из huggingface-transformers `aaraki/vit-base-patch16-224-in21k-finetuned-cifar10`, дообученная на cifar10
