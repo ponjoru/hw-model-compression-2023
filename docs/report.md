@@ -47,6 +47,7 @@ TODO:
 |--------------------------|----------|------------|
 | MobileNetV2 (original)   | 138.93ms | 13.19Mb    |
 | MobileNetV2 (clustered32)| 151.98ms | 2.90Mb     |
+
 Уменьшение размера весов в x4.5 раза
 
 ## HW4: Knowledge distillation
