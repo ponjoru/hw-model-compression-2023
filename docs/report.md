@@ -38,10 +38,16 @@ TODO:
 * применить pruning
 
 ## HW3: Weights Clustering
-*To be added soon*
+Скрипт: `homeworks/hw3_weights_clusterization.py` \
+Задача: применить методы кластеризации весов
 
-Реализация из коробки доступна только в фреймворке Keras. Реализаций для pytorch я не нашел. Нужно либо 
-реализовывать самому, либо переводить веса в Pytorch -> ONNX -> Keras
+Кластеризация весов была реализована для модели MobileNetV2 в фреймворке keras
+
+| Model                    | Latency  | Model Size |
+|--------------------------|----------|------------|
+| MobileNetV2 (original)   | 138.93ms | 13.19Mb    |
+| MobileNetV2 (clustered32)| 151.98ms | 2.90Mb     |
+Уменьшение размера весов в x4.5 раза
 
 ## HW4: Knowledge distillation
 Скрипт: `homeworks/hw4_knowledge_distillation.ipynb`  
